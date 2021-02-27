@@ -1,0 +1,311 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>instragram feed</title>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="iconito">
+                <i class="fab fa-instagram fa-lg"> <span><b>Instagram</b></span> </i>
+            </div>
+            <div class="botones">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a New post
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            
+                                
+                                
+                            <div class="modal-body">
+                                <textarea class="form-control" id="message-text"></textarea>
+                                <br>
+                                <button type="button" class="btn btn-light, border" data-bs-dismiss="modal"><i class="fas fa-camera"></i>
+                                </button>
+                                <button type="button" class="btn btn-light, border" data-bs-dismiss="modal"><i
+                                        class="fas fa-map-marker-alt"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        data-bs-display="static" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+    
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active border-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fas fa-th"></i></button>
+            </li>
+            <li class="nav-item " role="presentation">
+                <button class="nav-link border-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fas fa-stop"></i></button>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+    
+                        <img src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80"
+                            class="card-img-top" alt="...">
+    
+                    </div>
+                    <div class="card">
+    
+                        <img src="https://i.pinimg.com/originals/1e/a3/07/1ea307e79640988d21184e571e138a10.jpg"
+                            class="card-img-top" alt="...">
+    
+                    </div>
+                    <div class="card">
+    
+                        <img src="https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80"
+                            class="card-img-top" alt="...">
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+    
+                    <img src="https://images.unsplash.com/photo-1520634996521-d0985c84316a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top" alt="...">
+    
+                </div>
+                <div class="card">
+    
+                    <img src="https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top" alt="...">
+    
+                </div>
+                <div class="card">
+    
+                    <img src="https://images.unsplash.com/photo-1518965964410-1aa5d438453f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top" alt="...">
+    
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+    
+                    <img src="https://img.freepik.com/foto-gratis/divertida-mujer-loca-hermosa-posando-pared-grandes-dulces-falsos-coloridos-haciendo-muecas-mostrando-lengua-emociones-brillantes-ropa-rosa-moda-feliz-chica-rubia_291049-2159.jpg?size=626&ext=jpg"
+                        class="card-img-top" alt="...">
+    
+                </div>
+                <div class="card">
+    
+                    <img src="https://media1.tenor.com/images/b81bd17754ffa0a3b07fd8517c90c97e/tenor.gif?itemid=17702829"
+                        class="card-img-top" alt="...">
+    
+                </div>
+                <div class="card">
+    
+                    <img src="https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80"
+                        class="card-img-top" alt="...">
+    
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="contenedor">
+                <div class="card-group, justify-content-center">
+                    <div id="uno" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+    
+                    <div id="dos" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://i.pinimg.com/originals/1e/a3/07/1ea307e79640988d21184e571e138a10.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div id="tres" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card-group, justify-content-between, ml-3">
+                    <div id="cuatro" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1520634996521-d0985c84316a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div id="cinco" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div id="seis" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1518965964410-1aa5d438453f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group, justify-content-between">
+                    <div id="siete" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://img.freepik.com/foto-gratis/divertida-mujer-loca-hermosa-posando-pared-grandes-dulces-falsos-coloridos-haciendo-muecas-mostrando-lengua-emociones-brillantes-ropa-rosa-moda-feliz-chica-rubia_291049-2159.jpg?size=626&ext=jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div id="ocho" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://media1.tenor.com/images/b81bd17754ffa0a3b07fd8517c90c97e/tenor.gif?itemid=17702829"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div id="nueve" class="card">
+                        <div class="card-header">
+                            <h5> My first photo</h5>
+                            <div class="float-end, position-absolute top-0 end-0">
+                                <p class="m-2">12/14</p>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>23 likes</h5>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purchases. I am learning to code with #BreathCode</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+        
+</body>
+</html>

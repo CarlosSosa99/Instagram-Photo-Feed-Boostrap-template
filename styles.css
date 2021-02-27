@@ -1,0 +1,44 @@
+.contenedor{margin:auto;
+background: rgb(221, 217, 217);}
+#uno     {width: 600px;
+height: 600px;
+margin:auto;
+margin-bottom: 40px;}
+#dos {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#tres {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#cuatro{width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#cinco{width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#seis {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#siete {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#ocho {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+#nueve {width: 600px;
+height: 600px;
+margin: auto;
+margin-bottom: 40px}
+span{ font-family: 'Handlee', cursive;
+      color: grey; font-size: large;  }
+
+/*intente este code para los nav pills... sin exito*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{background: grey;color:white;}
